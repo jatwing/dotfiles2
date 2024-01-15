@@ -1,0 +1,1 @@
+dnf shell run.sh
