@@ -1,1 +1,2 @@
-ln -sf $(pwd "${BASH_SOURCE[0]}") ~/.config/awesome
+mkdir -p ~/.config/awesome
+ln -sf $(dirname $(realpath $0))/rc.lua ~/.config/awesome/rc.lua
