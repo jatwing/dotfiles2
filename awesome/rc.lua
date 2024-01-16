@@ -776,8 +776,8 @@ awful.rules.rules = { -- All clients will match this rule.
 		screen = awful.screen.preferred,
 		placement = awful.placement.no_overlap + awful.placement.no_offscreen,
 	},
-}, -- Floating clients.
-{
+}, {
+	-- Floating clients.
 	rule_any = {
 		instance = { "DTA", "copyq", "pinentry" }, -- Firefox addon DownThemAll. -- Includes session name in class.
 		class = {
@@ -798,8 +798,8 @@ awful.rules.rules = { -- All clients will match this rule.
 		role = { "AlarmWindow", "ConfigManager", "pop-up" }, -- Thunderbird's calendar. -- Thunderbird's about:config. -- e.g. Google Chrome's (detached) Developer Tools.
 	},
 	properties = { floating = true },
-}, -- Add titlebars to normal clients and dialogs
-{
+}, {
+	-- Add titlebars to normal clients and dialogs
 	rule_any = {
 		type = { "normal", "dialog" },
 	},
@@ -879,5 +879,6 @@ end)
 client.connect_signal("unfocus", function(c)
 	c.border_color = beautiful.border_normal
 end)
+
 
 -- }}}
