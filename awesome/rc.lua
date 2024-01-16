@@ -52,9 +52,9 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "gnome-terminal"
-editor = os.getenv("EDITOR") or "vi"
-editor_cmd = terminal .. " -e " .. editor
+terminal = require("modules.terminal").terminal
+editor = require("modules.terminal").editor
+editor_cmd = require("modules.terminal").editor_cmd
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
