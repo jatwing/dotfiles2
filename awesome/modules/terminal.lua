@@ -1,6 +1,7 @@
+-- This is used later as the default terminal and editor to run.
 local terminal = "gnome-terminal"
 local editor = "vim"
-local editor_cmd = terminal .. '-e' .. editor
+local editor_cmd = terminal .. ' -- ' .. editor
 
 return {
   terminal = terminal,
