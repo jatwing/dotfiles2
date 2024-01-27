@@ -1,0 +1,2 @@
+tmux new s3
+tmux attach -t s3

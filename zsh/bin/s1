@@ -1,0 +1,2 @@
+tmux new s1
+tmux attach -t s1
