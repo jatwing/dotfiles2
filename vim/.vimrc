@@ -13,7 +13,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 "Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 call plug#end()
