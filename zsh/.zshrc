@@ -1,3 +1,5 @@
+PS1="[%~] "
+
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
